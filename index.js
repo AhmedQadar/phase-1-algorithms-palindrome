@@ -1,19 +1,11 @@
 function reverse(word) {
-  const wordArray = word.split("");
-  const reversedWordArray = wordArray.reverse();
-  const reversedWord = reversedWordArray.join('');
-  return reversedWord;
+  return word.split("").reverse().join("");
 }
 
 function isPalindrome(word) {
   // Write your algorithm here
   const reversedWord = reverse(word);
-
-  if (word === reversedWord){
-    return true
-  } else {
-    return false
-  }
+  return word === reversedWord;
 
 }
 
@@ -31,9 +23,7 @@ function isPalindrome(word) {
 
 /*
   Add written explanation of your solution here
-  //Split the word from an array to a string
-  //reverse the words to make a palindrome
-  //join the reversed words together 
+  
 */
 
 // You can run `node index.js` to view these console logs
